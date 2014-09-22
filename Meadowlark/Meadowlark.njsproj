@@ -30,6 +30,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="lib\fortune.js" />
     <Compile Include="Meadowlark.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\user.js" />
@@ -38,6 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="lib\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
