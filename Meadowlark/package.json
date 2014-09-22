@@ -1,0 +1,16 @@
+{
+  "name": "Meadowlark",
+  "version": "0.0.0",
+  "description": "Meadowlark",
+  "main": "Meadowlark.js",
+  "author": {
+    "name": "Rodrigo",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "^3.4.4",
+    "express-handlebars": "^1.1.0",
+    "express3-handlebars": "^0.5.2",
+    "stylus": "*"
+  }
+}
