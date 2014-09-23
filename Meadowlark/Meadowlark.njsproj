@@ -5,6 +5,8 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>Meadowlark</Name>
     <RootNamespace>Meadowlark</RootNamespace>
+    <LaunchUrl>
+    </LaunchUrl>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -21,7 +23,7 @@
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
     <ProjectView>ShowAllFiles</ProjectView>
     <NodejsPort>1337</NodejsPort>
-    <StartWebBrowser>true</StartWebBrowser>
+    <StartWebBrowser>True</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,21 +34,31 @@
   <ItemGroup>
     <Compile Include="lib\fortune.js" />
     <Compile Include="Meadowlark.js" />
+    <Compile Include="public\qa\tests-about.js" />
+    <Compile Include="public\qa\tests-global.js" />
+    <Compile Include="public\vendor\chai.js" />
+    <Compile Include="public\vendor\mocha.js" />
+    <Compile Include="qa\tests-crosspage.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\user.js" />
     <Content Include="package.json" />
+    <Content Include="public\vendor\mocha.css" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
     <Folder Include="lib\" />
+    <Folder Include="qa\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
+    <Folder Include="public\qa\" />
+    <Folder Include="public\vendor\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
     <Folder Include="views\layouts\" />
+    <Folder Include="views\tours\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="views\404.handlebars" />
@@ -54,6 +66,8 @@
     <Content Include="views\500.handlebars" />
     <Content Include="views\home.handlebars" />
     <Content Include="views\layouts\main.handlebars" />
+    <Content Include="views\tours\hood-river.handlebars" />
+    <Content Include="views\tours\request-group-rate.handlebars" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config" />
     <Content Include="bin\ChangeConfig.ps1" />
